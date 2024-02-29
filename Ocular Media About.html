@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Experiment 2</title>
+  <link href="StyleSheet1.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('Studio1.png');
+      /* Specify the URL of your image */
+      background-size: cover;
+      /* Cover the entire background */
+      background-repeat: no-repeat;
+      /* Do not repeat the background image */
+      background-attachment:fixed;
+      /* Keep the background image fixed while scrolling */
+      justify-content: center;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      color: rgb(255, 255, 255);
+      font-size: 5rem;
+    }
+    nav ul {
+      list-style: none;
+      /*padding: 5;*/
+      height: 50px;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 0;
+      /*Optional:Add some margin between the links*/
+      margin-top: 0px;
+      font-size: 1.5625rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      text-decoration: none;
+      padding: 14px 16px;
+      text-align:center;
+      display: inline-block;
+    }
+    .image{
+        position: absolute;
+        float: left;
+        width: 700px;
+        height: 590px;
+        top:420px;
+    }
+    .image3{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      padding-left: 350px;
+    }
+    .dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown button{
+      background-color: transparent;
+      color: white;
+      padding:12px;
+      font-size:1.5625rem;
+      font-weight: bold;
+      font-family: "Areial";
+      border:none;
+      cursor:pointer;
+    }
+    .dropdown-content{
+      display:none;
+      position:absolute;
+      background-color: rgb(32, 29, 29);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(45, 42, 42, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a{
+      color:rgb(255, 255, 255);
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover{
+      background-color: none;
+    }
+    .dropdown:hover .dropdown-content{
+      display:block;
+    }
+    
+  </style>
+</head>
+<body>
+    <img src="Logo.jpg" alt="Header Image" id="header-image" class="image3">
+    <header>
+        <h1>OCULAR MEDIA</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="" nav-item active">
+            <a class="nav-link" href="Exp2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ocular Media.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button>More</button>
+              <div class="dropdown-content">
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+                <a href="#">FAQs</a>
+                <a href="Response Form.html">Contact Us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p><span style="display:block; text-align:center; font-size: 30px; font-weight: bold;">About Us</span></p>
+    <p><span style="display:block; text-align:center; font-size: 20px; font-weight: bold;">Welcome to Ocular Media: Where Every Frame Tells a Story.</span></p>
+    <p>At Ocular Media, we believe in the transformative power of visual storytelling. With a 
+        keen eye for detail and a passion for capturing the essence of every moment, we are 
+        dedicated to crafting timeless images and videos that resonate with authenticity and 
+        emotion.</p>
+    
+    <p>Our journey began with a vision to redefine the art of photography and videography, 
+        transcending mere documentation to create immersive narratives that leave a lasting 
+        impression. Guided by innovation and fueled by creativity, we strive to push the 
+        boundaries of our craft, delivering unparalleled quality and excellence in every project 
+        we undertake.</p>
+
+    <p>From weddings to corporate events, from intimate portraits to cinematic masterpieces, 
+        we approach each assignment with a unique blend of technical expertise and artistic 
+        vision. Our team of seasoned professionals is committed to capturing the essence of 
+        every occasion, transforming fleeting moments into cherished memories that stand 
+        the test of time.</p>
+
+    <p>But our passion goes beyond the lens. We understand that behind every photograph 
+        and video lies a story waiting to be told a story of love, of laughter, of triumph, and of 
+        joy. It is this understanding that drives us, fuels our creativity, and inspires us to elevate 
+        the ordinary into the extraordinary.</p>
+
+    <p>At Ocular Media, we pride ourselves on our ability to connect with our clients on a 
+        personal level, understanding their vision and bringing it to life with precision and care. 
+        Whether you're walking down the aisle, launching a new product, or celebrating a 
+        milestone, we are here to ensure that your story is told with authenticity, passion, and artistry.</p>
+
+    <p>Join us on a journey of discovery and exploration, where every frame is an opportunity 
+        to create magic, to evoke emotion, and to inspire change. Thank you for choosing 
+        Ocular Media to be a part of your story.</p>
+
+    <div>
+      <img src="Expert.jpg" class="image">
+    </div>
+</body>
+

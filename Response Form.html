@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Form</title>
+    <link href="StyleSheet2.css" rel="stylesheet" >
+    <style>
+        body{
+          margin: 0;
+          padding: 0;
+          background-image: url('Studio1.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment:fixed;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(255, 255, 255);
+            font-size: 5rem;
+        }
+        nav ul {
+            list-style: none;
+            /*padding: 5;*/
+            height: 50px;
+        }
+        nav li {
+            display: inline-block;
+            margin-left: 0;
+            /*Optional:Add some margin between the links*/
+            margin-top: 0px;
+            font-size: 1.5625rem;
+            font-weight: bold;
+        }
+        nav a {
+            text-decoration: none;
+            padding: 14px 16px;
+            text-align:center;
+            display: inline-block;
+        }
+        .image3{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            padding-left: 350px;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown button{
+            background-color: transparent;
+            color: white;
+            padding:12px;
+            font-size:1.5625rem;
+            font-weight: bold;
+            font-family: "Areial";
+            border:none;
+            cursor:pointer;
+        }
+      .dropdown-content{
+          display:none;
+          position:absolute;
+          background-color: rgb(32, 29, 29);
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+      }
+      .dropdown-content a{
+          color:rgb(255, 255, 255);
+          padding: 14px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      .dropdown-content a:hover{
+        background-color: none;
+      }
+      .dropdown:hover .dropdown-content{
+        display:block;
+      }
+      textarea{
+        width: 300px;
+        height: 150px;
+        padding:10px;
+        resize: none;
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <img src="Logo.jpg" alt="Header Image" id="header-image" class="image3">
+      <h1>
+        <center>OCULAR MEDIA</center>
+      </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="" nav-item active">
+            <a class="nav-link" href="Exp2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ocular Media.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button>More</button>
+              <div class="dropdown-content">
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+                <a href="#">FAQs</a>
+                <a href="Response Form.html">Contact Us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <p><span style="display:block; text-align:center; font-size: 50px; font-weight: bold;">Contact Us</span></p>
+    <p><span style="display:block; text-align:center; font-size: 30px; font-weight: bold;">Welcome to our Contact Us page!</span></p>
+    <p> We're committed to providing top-notch support and assistance tailored to your needs. Your satisfaction is our utmost priority.
+       You can reach out to us via email at [support@company.com](mailto:support@company.com) or by phone at +1 (555) 123-4567, Monday 
+       through Friday, from 9:00 AM to 5:00 PM (GMT).
+       Alternatively, you can use the contact form below to send us a message directly from our website. We guarantee a swift response to all inquiries within 
+       24 hours.</p>
+    <p>Thank you for choosing Ocular Media. We value your feedback and are eager to assist you in any way we can!</p>
+    <div id="formContainer" class="container">
+      <!-- Form will be generated here -->
+    </div>
+    
+    <script>
+      // Function to create and append form elements
+      function createForm() {
+        // Create form element
+        var form = document.createElement('form');
+        form.setAttribute('method', 'POST');
+    
+        // Create pre element
+        var pre = document.createElement('pre');
+        // Create label and input elements for Name
+        var nameLabel = document.createElement('label');
+        nameLabel.setAttribute('for', 'name');
+        nameLabel.textContent = 'Name:';
+        var nameInput = document.createElement('input');
+        nameInput.setAttribute('type', 'text');
+        nameInput.setAttribute('id', 'name');
+        nameInput.setAttribute('name', 'name');
+        nameInput.setAttribute('required', '');
+        nameInput.setAttribute('pattern', '[A-Za-z]+'); // Only alphabetic characters are allowed
+        nameInput.setAttribute('title', 'Name must contain only letters');
+    
+        // Create label and input elements for Email
+        var emailLabel = document.createElement('label');
+        emailLabel.setAttribute('for', 'email');
+        emailLabel.textContent = 'Email:';
+        var emailInput = document.createElement('input');
+        emailInput.setAttribute('type', 'email');
+        emailInput.setAttribute('id', 'email');
+        emailInput.setAttribute('name', 'email');
+        emailInput.setAttribute('pattern', '[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}');
+        emailInput.setAttribute('required', '');
+        emailInput.setAttribute('placeholder', 'e.g., abc123@gmail.com');
+    
+        // Create label and input elements for Mobile Number
+        var mobileLabel = document.createElement('label');
+        mobileLabel.setAttribute('for', 'mobile');
+        mobileLabel.textContent = 'Mobile Number:';
+        var mobileInput = document.createElement('input');
+        mobileInput.setAttribute('type', 'tel');
+        mobileInput.setAttribute('id', 'mobile');
+        mobileInput.setAttribute('name', 'mobile');
+        mobileInput.setAttribute('pattern', '[0-9]{10}');
+        mobileInput.setAttribute('required', '');
+        mobileInput.setAttribute('placeholder', 'e.g., 1234567890');
+    
+        // Create label and select elements for Service
+        var serviceLabel = document.createElement('label');
+        serviceLabel.setAttribute('for', 'service');
+        serviceLabel.textContent = 'What service are you interested in:';
+        var serviceSelect = document.createElement('select');
+        serviceSelect.setAttribute('id', 'service');
+        serviceSelect.setAttribute('name', 'service');
+        serviceSelect.setAttribute('required', '');
+        var defaultOption = document.createElement('option');
+        defaultOption.setAttribute('value', '');
+        defaultOption.setAttribute('disabled', '');
+        defaultOption.setAttribute('selected', '');
+        defaultOption.textContent = 'Select Service';
+        serviceSelect.appendChild(defaultOption);
+    
+        // Array of service options
+        var services = [
+          'Wedding photography and videography',
+          'Pre-wedding shoots',
+          'Candid photography',
+          'Traditional photography and videography',
+          'Cinematography',
+          'Albums',
+          'Other'
+        ];
+    
+        // Create option elements for services
+        services.forEach(function(service) {
+          var option = document.createElement('option');
+          option.setAttribute('value', service);
+          option.textContent = service;
+          serviceSelect.appendChild(option);
+        });
+    
+        // Create submit button
+        var submitButton = document.createElement('button');
+        submitButton.setAttribute('type', 'submit');
+        submitButton.textContent = 'Submit';
+
+        // Append all elements to the pre element
+        pre.appendChild(nameLabel);
+        pre.appendChild(nameInput);
+        pre.appendChild(document.createElement('br')); // Line break
+        pre.appendChild(emailLabel);
+        pre.appendChild(emailInput);
+        pre.appendChild(document.createElement('br')); // Line break
+        pre.appendChild(mobileLabel);
+        pre.appendChild(mobileInput);
+        pre.appendChild(document.createElement('br')); // Line break
+        pre.appendChild(serviceLabel);
+        pre.appendChild(serviceSelect);
+        pre.appendChild(document.createElement('br')); // Line break
+        pre.appendChild(submitButton);
+    
+        // Append the pre element to the form
+        form.appendChild(pre);
+    
+        // Append the form to the container
+        var container = document.getElementById('formContainer');
+        container.appendChild(form);
+      }
+    
+      // Call the createForm function to generate the form
+      createForm();
+    </script>    
+</body>
+</html>

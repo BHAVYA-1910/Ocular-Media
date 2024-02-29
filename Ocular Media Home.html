@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Experiment 2</title>
+  <link href="StyleSheet.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('Studio1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment:fixed;
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      color: rgb(255, 255, 255);
+      font-size: 5rem;
+    }
+    nav ul {
+      list-style: none;
+      /*padding: 5;*/
+      height: 50px;
+    }
+    nav li {
+      display: inline-block;
+      margin-left: 0;
+      /*Optional:Add some margin between the links*/
+      margin-top: 0px;
+      font-size: 1.5625rem;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      padding: 14px 16px;
+      text-align:center;
+      display: inline-block;
+    }
+    .container{
+      position: relative;
+    }
+    .image2{
+      margin-left: 10px;
+    }
+    .dropdown{
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown button{
+      background-color: transparent;
+      color: white;
+      padding:12px;
+      font-size:1.562rem;
+      font-weight: bold;
+      font-family: "Areial";
+      border:none;
+      cursor:pointer;
+    }
+    .dropdown-content{
+      display:none;
+      position:absolute;
+      background-color: rgb(32, 29, 29);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a{
+      color:rgb(255, 255, 255);
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover{
+      background-color: none;
+    }
+    .dropdown:hover .dropdown-content{
+      display:block;
+    }
+    .image1{
+      margin-top: 30px;
+      margin-left: 50px;
+    }
+
+    .myHeader{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+</style>
+</head>
+
+<body>
+    <header class="myHeader">
+      <img src="Logo.jpg" alt="Header Image" id="header-image" class="image3">
+      <h1>
+        OCULAR MEDIA
+      </h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="" nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ocular Media.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button>More</button>
+              <div class="dropdown-content">
+                <a href="#">Portfolio</a>
+                <a href="#">Services</a>
+                <a href="#">FAQs</a>
+                <a href="Response Form.html">Contact Us</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class = "hero">
+      <div>
+        <p>Photos are the best way of going back in time and reliving the special moments. If you are looking for a good
+          photography company to shoot your wedding then Occular Media
+          is the choice that you should make. It is a photography company based in Mumbai and provides one-stop solutions
+          for all your wedding photography and videography needs.</p>
+        <p> Services Offered
+            From pre-wedding to the wedding and post-wedding functions, their team of professionals have a great experience in
+            covering weddings. They capture each special and rare
+            moment of your nuptial ceremonies with perfection and deliver maximum customer satisfaction. They work with the
+            utmost professionalism and efficiency to deliver the flawless outcomes.
+            They are ready to travel outstations to provide their outstanding services. They have a lot of packages which are
+            customizable as per your choice and budget. The wide range of services offered by them include:
+          <ul>
+              <li style="color: burlywood; font-size:20px;">Wedding photography and videography</li>
+              <li style="color: burlywood; font-size:20px;">Pre-wedding shoots</li>
+              <li style="color: burlywood; font-size:20px;">Candid photography</li>
+              <li style="color: burlywood; font-size:20px;">Traditional photography and videography</li>
+              <li style="color: burlywood; font-size:20px;">Cinematography</li>
+              <li style="color: burlywood; font-size:20px;">Albums</li>
+          </ul>
+        </p>
+        <img src="wedding.jpg" alt="Second Image" class="image2">
+      </div>
+      <div class="container">
+        <img src="wedding3.jpg" alt="First Image" class="image1">
+      </div>
+    </div>
+</body>
+</html>
